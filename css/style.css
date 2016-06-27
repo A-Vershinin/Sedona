@@ -264,7 +264,7 @@ body {
   box-shadow: inset 0px 5px 3px 0 rgba(229, 104, 104, 0.5),
             inset 0px -5px 3px 0 rgba(229, 104, 104, 0.5),
             inset 5px 0px 3px 0 rgba(229, 104, 104, 0.5),
-            inset -5px 0px 3px 0 rgba(229, 104, 104, 0.5);
+            inset -5px 0px 3px 0 rgba(229, 104, 132, 0.5);
 }
 .bottom .features__number {
   position: relative;
@@ -446,6 +446,7 @@ body {
 }
 /* end index.html */
 
+/*start hotels.html*/
 
 
 
@@ -455,6 +456,8 @@ body {
 
 
 
+
+/* end hotels.html */
 @font-face {
   font-weight: normal;
   font-style: normal;
