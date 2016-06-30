@@ -3,8 +3,8 @@
   font-style: normal;
 
   font-family: "symbols-sedona";
-  src: url("../fonts/symbols-sedona.woff") format("woff"),
-       url("../fonts/symbols-sedona.woff2") format("woff2");
+  src: url("../fonts/symbols-sedona/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona/symbols-sedona.woff2") format("woff2");
 }
 
 [class^="icon-"]::before,

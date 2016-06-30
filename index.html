@@ -6,7 +6,7 @@
   <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
   <title>Sedona</title>
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/symbols-sedona/css/symbols-sedona.css" rel="stylesheet" type="text/css">
+  <link href="css/symbols-sedona.css" rel="stylesheet" type="text/css">
   <link href="css/style.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
@@ -34,7 +34,7 @@
             <a href="#" class="menu__link">Карта Штата</a>
           </li>
           <li class="menu__item">
-            <a href="#" class="menu__link">Гостиницы</a>
+            <a href="hotels.html" class="menu__link">Гостиницы</a>
           </li>
         </ul>
       </nav><!--end menu -->
@@ -108,8 +108,9 @@
         <p class="search__caption">Заинтересовались?</p>
         <p class="search__text">Укажите предпологаемые даты поездки,<br>
           и мы покажем вам лучшие предложения в гостиниц в седоне</p>
-        <a href="#" class="btn">Поиск гостиницы в седоне</a>
+        <a href="#" class="btn_search">Поиск гостиницы в седоне</a>
         <img src="img/bg-map.jpg"  width="1200" height="593" alt="Карта" class="search__map">
+        <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592331.7046340524!2d-112.37631604088409!3d34.901397766884145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1467284914293" width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe> -->
       </section> <!--end search -->
     </div> <!--end container -->
   </main> <!--end main -->
@@ -125,8 +126,52 @@
         <span class="footer__copyright--text">website by</span>
         <a class="footer__copyright--link" href="https://htmlacademy.ru">htmlacademy.ru</a>
       </div>
-  </footer> <!--end footer -->
+    </footer> <!--end footer -->
   </div> <!--end container -->
+
+  <div class="modal__window">
+    <div class="modal__content">
+      <form class="search-hotel-form" action="" method="get">
+        <ul class="clearfix">
+          <li>
+            <label for="date-start-field">Дата заезда:</label>
+            <input class="date" type="text" name="date-start" id="date-start-field"
+               value="24 Апреля 2016">
+            <span class="icon_calendar"></span>
+          </li>
+          <li>
+            <label for="date-end-field">Дата выезда:</label>
+            <input class="date" type="text" name="date-end" id="date-end-field"
+              value="4 Июня 2016">
+            <span class="icon_calendar"></span>
+          </li>
+          <li>
+            <label for="adult-field">Взрослые</label>
+            <div class="number">
+              <span class="adult__minus"></span>
+              <input class="count adult_count" type="text" name="adult" id="adult-field"
+                placeholder="2">
+              <span class="adult__plus"></span>
+            </div>
+          </li>
+          <li>
+            <label for="kids-field">Дети</label>
+            <div class="number kids">
+              <span class="kids__minus"></span>
+              <input class="count kids__count" type="text" name="children" id="children-field"
+                placeholder="0">
+              <span class="kids__plus"></span>
+            </div>
+          </li>
+        </ul>
+        <button class="btn_form" type="submit">Найти</button>
+        <a class="btn__search" href="#">Найти</a>
+      </form>
+    </div>
+    <div class="modal__content_map">
+      <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d592331.7046340524!2d-112.37631604088409!3d34.901397766884145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1467284914293" width="1200" height="473" frameborder="0" style="border:0" allowfullscreen></iframe> -->
+    </div>
+  </div>
 
 
 
