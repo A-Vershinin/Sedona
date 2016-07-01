@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta http http-equiv="X-UA-Compatible" content="IE=Edge, chrome=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width-device-width, initial-scale=1, maximum-scale=1">
   <title>Sedona</title>
   <link href="css/normalize.css" rel="stylesheet">
@@ -10,12 +10,14 @@
   <link href="css/style.css" rel="stylesheet">
 
   <!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-<![endif]-->
+     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+     <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
 </head>
 <body>
+  <div class="container">
   <header class="page__header">
-    <div class="container">
+    <!-- <div class="container"> -->
       <div class="logo">
         <a href="" class="logo__link">
           <img src="img/logo.png" width="138" height="70"
@@ -38,9 +40,9 @@
           </li>
         </ul>
       </nav><!--end menu -->
-    </div> <!--end container -->
-  </header> <!--end header -->
 
+  </header> <!--end header -->
+  </div> <!--end container -->
   <main class="page__content">
     <div class="container">
       <section class="promo">
@@ -131,7 +133,7 @@
 
   <div class="modal__window">
     <div class="modal__content">
-      <form class="search-hotel-form" action="" method="get">
+      <form class="search-hotel-form" action="#" method="get">
         <ul class="clearfix">
           <li>
             <label for="date-start-field">Дата заезда:</label>
